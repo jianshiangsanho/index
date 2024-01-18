@@ -1,8 +1,4 @@
-/* http://meyerweb.com/eric/tools/css/reset/ 
-   v2.0 | 20110126
-   License: none (public domain)
-*/
-
+/* Reset and global styles */
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -12,144 +8,159 @@ b, u, i, center,
 dl, dt, dd, ol, ul, li,
 fieldset, form, label, legend,
 table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed, 
-figure, figcaption, footer, header, hgroup, 
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
 menu, nav, output, ruby, section, summary,
 time, mark, audio, video {
-	margin: 0;
-	padding: 0;
-	border: 0;
-	font-size: 100%;
-	font: inherit;
-	vertical-align: baseline;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
 }
+
 /* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure, 
+article, aside, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section {
-	display: block;
+  display: block;
 }
+
 body {
-	line-height: 1;
+  line-height: 1;
 }
+
 ol, ul {
-	list-style: none;
+  list-style: none;
 }
+
 blockquote, q {
-	quotes: none;
+  quotes: none;
 }
+
 blockquote:before, blockquote:after,
 q:before, q:after {
-	content: '';
-	content: none;
+  content: '';
+  content: none;
 }
+
 table {
-	border-collapse: collapse;
-	border-spacing: 0;
+  border-collapse: collapse;
+  border-spacing: 0;
 }
 
-@import url(https://fonts.googleapis.com/earlyaccess/cwtexyen.css);
-.body{
-	width: 1200px;
-	position: relative;
-}
-.header{
-	height: 73px;
-	display: flex;
-	justify-content: space-between;
-	align-items: center;
-	margin: 0 auto;
-	background-color: #e0d8de;
-	box-shadow: 0px 0px 12px 0px #807063;
-	border-radius: 0px 0px 10px 10px;
+/* Header styles */
+.header {
+  height: 73px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 auto;
+  background-color: #e0d8de;
+  box-shadow: 0px 0px 12px 0px #807063;
+  border-radius: 0px 0px 10px 10px;
 }
 
-.header .ning{
-	width: 230px;
-	height: 64.4px;
-	margin-top: 15px;
-	margin-bottom: 15px;
+.header h1 {
+  padding: 5px;
+  font-family: 'cwTeXYen', sans-serif;
+  color: #847f87;
 }
 
-.menu{
-	display: flex;
-	justify-content: space-between, stretch;
-	margin: 0px;
+/* Container styles */
+.container1 {
+  width: 100%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-evenly;
+  align-content: center;
+  background-color: white;
+  border-radius: 5px;
 }
 
-.item{
-	width: 125px;
-	text-align: center;
-}
-.header h1{
-	padding: 5px;
-	font-family: cwTeXYen , sans-serif;
-	color: #847f87;
-
-}
-
-.item a{
-	display: block;
-	color: #847f87;
-	text-decoration: none;
-	padding: 10px;
-	font-family: cwTeXYen , sans-serif;
-}
-.item a:hover{
-	display: block;
-	color:white;
+.callback ul {
+  width: 140px;
+  margin-top: 20px;
+  margin-left: 10px;
+  margin-right: 10px;
+  padding: 5px 5px 5px 5px;
+  font-size: 15px;
+  font-weight: bolder;
+  background-color: #DAD6DC;
+  color: #847f87;
+  text-align: center;
+  box-shadow: 0px 3px 5px 0px #b7afa9;
+  border-radius: 5px 5px 5px 5px;
+  font-family: 'cwTeXYen', sans-serif;
+  font-stretch: semi-expanded;
 }
 
-.container1{
-	width: 100%;
-	margin: 0 auto;
-	display: flex;
-	justify-content: space-evenly;
-	align-content: center;
-	background-color:white;
-	border-radius: 5px;
+.callback li {
+  list-style: none;
+  width: 170px;
+  margin-top: 15px;
+  margin-bottom: 10px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  text-decoration: none;
 }
-.callback ul{
-	width: 140px;
-	margin-top: 20px;
-	margin-left: 10px;
-    margin-right: 10px ;
-	padding: 5px 5px 5px 5px;
-	font-size: 15px;
-	font-weight: bolder;
-	background-color: #DAD6DC;
-	color:#847f87;
-    text-align: center;
-	box-shadow: 0px 3px 5px 0px #b7afa9;
-	border-radius: 5px 5px 5px 5px;
-	font-family: cwTeXYen , sans-serif;
-	font-stretch:semi-expanded;
+
+.callback li a {
+  display: block;
+  text-decoration: none;
+  color: #a39fa5;
+  font-family: 'cwTeXYen', sans-serif;
+  font-size: 14.5px;
+  font-weight: 700;
 }
-.callback li{
-	list-style: none;
-    width: 170px;
-	margin-top: 15px;
-	margin-bottom: 10px;
-	margin-left: auto;
-    margin-right: auto;
-    text-align: center;
-	text-decoration: none;
+
+.callback li a:hover {
+  text-decoration: none;
+  color: #262828;
+  border-bottom: 2px solid lightgray;
 }
-.callback li a{
-	display: block;
-	text-decoration: none;
-	color: #a39fa5;
-	font-family: cwTeXYen , sans-serif;
-	font-size: 14.5px;
-	font-weight: 700;
+
+/* DutyTable styles */
+.dutyTable {
+  display: flex;
+  justify-content: center;
 }
-.callback li a:hover{
-	text-decoration: none;
-	color: #262828;
-	border-bottom: 2px solid lightgray;
+
+.times {
+  width: 1200px;
+  margin: 0 auto;
+  position: absolute;
 }
-.times{
-	width: 1200px;
-	margin: 0 auto;
-	position:absolute;
-	
+
+/* Media Queries for responsiveness (already included in the HTML) */
+
+@media (max-width: 768px) {
+  /* Styles for tablets (e.g., iPad) */
+  .header {
+    /* Update header styles for tablets */
+  }
+
+  .container1 {
+    /* Update container1 styles for tablets */
+  }
+
+  .dutyTable {
+    /* Update dutyTable styles for tablets */
+  }
+}
+
+@media (max-width: 375px) {
+  /* Styles for iPhone 12 Mini */
+  .header {
+    /* Update header styles for iPhone 12 Mini */
+  }
+
+  .container1 {
+    /* Update container1 styles for iPhone 12 Mini */
+  }
+
+  .dutyTable {
+    /* Update dutyTable styles for iPhone 12 Mini */
+  }
 }
